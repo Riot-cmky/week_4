@@ -4,26 +4,46 @@
 ##########################Reviewing somethings
 
 # indexing strings -- slide 4
-my_text = 'this is a text'
+my_text = 'this is a text '
 result = my_text  #get the index of the letter a
-print(result)
+print(result[0:4]) #prints the first 4 letters of the text
+print(result[-1])#prints the last letter of the text
+#this is called indexing
+# index slicing is a way to get a substring from ma string
+# substrings are a sequence of chacrters from a string
+#prints last letter of the text
 
 #get the index of the third letter from the end of the text
-
+print(result[-3])
 # find the index of the letter s
+print(result.find('s'))
+print(result.find('text'))
+prepRally = "Hancock College Prep cheerleaders are the best !"
+#Get the index of the word "cheerleaders" in the string prepRally
+print(prepRally.find('cheerleaders'))
+print(result.find("cheerleaders")) # prints -1 because cheerleaders is not in the string
+print(prepRally[21:33])
 
 ###slide 5
 # string[start:stop:step]
 #example
-# text = "Hello, World!"
-# print(text[7:12])  # prints "World"
-text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+text = "Hello, World!"
+print(text[0:12:3])  # prints "World"
+
+text = " ABCDEFGHIJKLMNOPQRSTUVWXYZ "
 # Get the substring CDE and put in a variable
+#find the index of the letter C
+print(text.find('C'))
+#find the index of letter E
+print(text.find('E'))
+#use the index to get the substring
+print(text[2:5])
 
 #get the first letter all the way to the 4th letter
+print(text[0:4])
 
 #get the first letter to the final letter and skip every 3rd letter
-
+print(text[0:-1:3])
 # Built-in methods:
 # Python has a variety of built-in methods to work with substrings.
 
@@ -36,17 +56,18 @@ text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 #################################Extracting Sub-Strings###################################
 # Extracting Sub-Strings Practice #1
 # Extract the first word of the following sentence using slicing, and display it on the screen:
-# "Controlling complexity is the essence of programming"
+sentence = "Controlling complexity is the essence of programming"
 # Hint: "Controlling" is 11 characters long.
-
+print(sentence[0:13])
 # Extracting Sub-Strings Practice #2
 # Take every third character starting from the ninth to the end of the sentence, and print the result.
-# "Never trust a computer you can't throw out a window"
+word = "Never trust a computer you can't throw out a window "
+print(sentence[9:-1:3])
 
 # Extracting Sub-Strings Practice #3
 # Reverses the position of all the characters in the following sentence and displays the result on the screen.
-# "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
-
+rev = "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
+print( rev[::-1])
 ##################################### String Methods#################################
 # String Methods Practice #1
 #slieds 12 -16
