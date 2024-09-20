@@ -62,13 +62,66 @@ print(sentence[0:13])
 # Extracting Sub-Strings Practice #2
 # Take every third character starting from the ninth to the end of the sentence, and print the result.
 word = "Never trust a computer you can't throw out a window "
-print(sentence[9:-1:3])
+print(word[9:-1:3])
 
 # Extracting Sub-Strings Practice #3
 # Reverses the position of all the characters in the following sentence and displays the result on the screen.
 rev = "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
 print( rev[::-1])
 ##################################### String Methods#################################
+#uppercase methodin python
+sentence1 = " Especially in electronic communications, writing in all caps is equivalent to yelling."
+print(sentence1.upper()) #prints the sentence in uppercase
+sentence2 = "ESPN IS THE BEST SPORTS NETWORK"
+print(sentence2.lower()) # prints the sentence in lower case
+print(sentence1.find("communications")) # prints the index of the world communications
+# uppercase the word communications in the sentence
+# use the slicing method
+print(sentence1[26:40].upper()) # prints the word communications in uppercase
+print(sentence1.replace("communications", "COMMUNICATIONS")) # prints the sentence communications in uppercase
+#or you can use the upper method
+print(sentence.replace("communications", "communications".upper())) #prints the sentece word communications in uppercase
+
+new_sentence = "if the implementation is hard to explain, it might be a bad idea."
+#replace the word "hard" with "easy" and "bad" with "good"
+modified_sentence = new_sentence.replace("hard", "easy").replace("bad", "good")
+print(modified_sentence)
+
+#join method
+word_list = ["Simple","is","better","than","complex."]
+print(word_list)
+joined_sentence = " ".join(word_list)
+print(joined_sentence)
+new_word_list = ["apple","banana","mango", "cherry","watermelon"]
+joined_sentence2 = "✨".join(new_word_list)
+print(joined_sentence2)
+
+#split method
+sentence4 = "I am a programmer"
+print(sentence4.split(" ")) #splits the sentence into a list of words
+#thus prints out as ['I', 'am', 'a', 'programmer']
+#by default, this method splits the sentence by commas
+print(sentence4.split(",")) #splits the sentence into a list of word using a seperator
+#takes out the comma
+#prints ou as ['I am a programmer']
+print(sentence4.split("a")) #splits the sentece into a list of words using a serpeartor
+#removes the indicated letter
+#prints out like this ['I ', 'm ', ' progr', 'mmer']
+
+# concatenation words in python repetition 15 times
+result = "Repetition " * 15
+
+#find the first paragraph inj the declaration of independence
+# place it in a variable called first_paragraph
+# replace the word "people" with "citizens" in the first paragraph
+# print the first paragraph with the word people replaced with citizens
+# remove all the spaces, replace the commas with emojis
+
+first_paragraph  = "The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."
+modified_sentenceDeclare = first_paragraph.replace("people", "citizens").replace(" ", "").replace(",", "👨‍🍳")
+print(modified_sentenceDeclare)
+
+
 # String Methods Practice #1
 #slieds 12 -16
 # Print the following text in uppercase, using the specific string method:
