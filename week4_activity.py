@@ -110,6 +110,7 @@ print(sentence4.split("a")) #splits the sentece into a list of words using a ser
 
 # concatenation words in python repetition 15 times
 result = "Repetition " * 15
+print(result)
 
 #find the first paragraph inj the declaration of independence
 # place it in a variable called first_paragraph
